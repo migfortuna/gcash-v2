@@ -1,0 +1,132 @@
+<html ng-app="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bank Information</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/bankInfo.css">
+        <script src="../js/index.js"></script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar fixed-top navbar-expand-lg py-3 navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" width="150" height="35" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Getting Started</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a class="dropdown-item text-left text-primary" href="#" id="serviceHeader">Lifestyle Services</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item text-left" href="#">Buy Load</a>
+                                        <a class="dropdown-item text-left" href="#">Borrow Load</a>
+                                        <a class="dropdown-item text-left" href="#">Pay Bills</a>
+                                        <a class="dropdown-item text-left" href="#">Book Movies</a>
+                                        <a class="dropdown-item text-left" href="#">Pay QR</a>
+                                        <a class="dropdown-item text-left" href="#">Shop Online</a>
+                                        <a class="dropdown-item text-left" href="#">Send Money</a>
+                                        <a class="dropdown-item text-left" href="#">Send with a Clip</a>
+                                        <a class="dropdown-item text-left" href="#">Ang Pao</a>
+                                        <a class="dropdown-item text-left" href="#">Request Money</a>
+                                        <a class="dropdown-item text-left" href="#">KKB</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a class="dropdown-item text-left text-primary" href="#" id="serviceHeader">Financial Services</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item text-left active" href="#">Bank Transfer</a>
+                                        <a class="dropdown-item text-left" href="#">GCredit</a>
+                                        <a class="dropdown-item text-left" href="#">Save Money</a>
+                                        <a class="dropdown-item text-left" href="#">Invest Money</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Promos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Help Center</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#" id="nav-link-Register"><span>Register</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        
+
+        <!-- Header -->
+        <section class="headerSection">
+            <div class="container">
+                <div class="page-header">
+                    <center><h1 class="text-primary">Bank Name</h1></center>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="infoSection1">
+            <form>
+                <div class="form-group amount">
+                    <label for="exampleInputEmail1" class="font-weight-bold text-primary">Enter Amount</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="PHP 0.00">
+                    <small id="emailHelp" class="form-text text-muted">Maximum of PHP 50,000</small>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <label for="accountName" class="font-weight-bold text-primary">Account Name</label>
+                        <input type="text" class="form-control" id="accountName" placeholder="Max of 30 Characters">
+                        <small id="emailHelp" class="form-text text-muted">Your information will be strictly confidential.</small>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <label for="accountNumber" class="font-weight-bold text-primary">Account Number</label>
+                        <input type="text" class="form-control" id="accountNumber" placeholder="12 Digits">
+                        <small id="emailHelp" class="form-text text-muted">Your information will be strictly confidential.</small>
+                    </div>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="exampleInputEmail1" class="font-weight-bold text-primary">Email Address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email (Optional)">
+                    <small id="emailHelp" class="form-text text-muted">Your information will be strictly confidential.</small>
+                </div>
+
+                <center>
+                    <button type="submit" class="btn btn-primary">
+                        SUBMIT
+                    </button>
+                </center>
+              </form>
+        </section>
+        <br><br>
+    </body>
+</html>

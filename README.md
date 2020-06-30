@@ -1,1 +1,1 @@
-# gcash-v2.github.io
+# gcash.github.io

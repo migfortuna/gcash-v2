@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GCash Services</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/index.js"></script>
+    </head>
+    <body ng-app="myApp">
+        <!-- Navigation Bar -->
+        <nav class="navbar fixed-top navbar-expand-lg py-3 navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" width="150" height="35" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Getting Started</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    GCash Services
+                  </a>  
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a class="dropdown-item text-left text-primary" href="#" id="serviceHeader">Lifestyle Services</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-left" href="#">Buy Load</a>
+                                    <a class="dropdown-item text-left" href="#">Borrow Load</a>
+                                    <a class="dropdown-item text-left" href="#">Pay Bills</a>
+                                    <a class="dropdown-item text-left" href="#">Book Movies</a>
+                                    <a class="dropdown-item text-left" href="#">Pay QR</a>
+                                    <a class="dropdown-item text-left" href="#">Shop Online</a>
+                                    <a class="dropdown-item text-left" href="#">Send Money</a>
+                                    <a class="dropdown-item text-left" href="#">Send with a Clip</a>
+                                    <a class="dropdown-item text-left" href="#">Ang Pao</a>
+                                    <a class="dropdown-item text-left" href="#">Request Money</a>
+                                    <a class="dropdown-item text-left" href="#">KKB</a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="dropdown-item text-left text-primary" href="#" id="serviceHeader">Financial Services</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-left active" href="#">Bank Transfer</a>
+                                    <a class="dropdown-item text-left" href="#">GCredit</a>
+                                    <a class="dropdown-item text-left" href="#">Save Money</a>
+                                    <a class="dropdown-item text-left" href="#">Invest Money</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Partners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Promos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Help Center</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="#" id="nav-link-Register"><span>Register</span></a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+
+
+        <!-- Section 1 -->
+        <section class="section1">
+            <div class="container bg-transparent">
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <img src="images/bank_transfer.png" width="150" height="150">
+                            <h1 id="bankTransfer" class="text-primary">BANK TRANSFER</h1>
+                            <hr id="horizontalLine">
+                        </div>
+                        <div class="col-12 col-lg-6 text-secondary" id="bankDescription">
+                            <h2 class="text-primary" id="cashless">Go Cashless with GCash!</h2>
+                            <h4 id="transferDescription">Experience easy, convenient, and secure fund transfers. Bank Transfer allows you to deposit and transfer money to over 40 banks instantly anytime, anywhere!</h4>
+                        </div>
+                        <hr id="horizontalLine">
+                    </div>
+                    <!-- <p>Shop with GCash QR, Buy Load, Pay Bills, and more – all through your GCash App.</p> -->
+                </div>   
+            </div>
+        </section>
+
+
+        <!-- Section 2 -->
+        <section class="section2" ng-controller="partnerBanks">
+            <div class="container">
+                <center><h2 id="partnerBanks">Select Partner Banks</h2></center>
+                <center><p class="text-secondary h5 mb-4" id="partnerBanks"><b>Skip the long lines and send money to over 40 banks anytime, anywhere.</b></p></center>
+                <p class="text-primary h5 mb-3" id="searchDescription"><b>Type Your Bank Name Below</b></p>
+                <!-- <center>
+                    <p class="h5 mb-4">
+                        <strong>
+                            <a href="html/allBanks.html" class="text-primary" id="partnerBanks">
+                                CLICK HERE TO SEE ALL BANKS
+                                <i class="fa fa-arrow-circle-right ml-1" style="font-size:22px"></i>
+                            </a>
+                        </strong>
+                    </p>
+                </center> -->
+                <input class="form-control mb-4 p-3" type="text" placeholder="Search" ng-model="search" style="font-size: 20px;">
+            </div>
+            <div class="container bankList">
+                <div class="row" ng-show="search">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 text-center mb-5" ng-repeat="bank in allBanks | filter: search | orderBy: 'name'">
+                        <a href="html/bankInfo.html">
+                            <img ng-src="{{ bank.image }}" ng-style="bank" class="mb-5">
+                            <p class="text-primary font-weight-bold bankName"><b>{{ bank.name }}</b></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

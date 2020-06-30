@@ -1,0 +1,126 @@
+@font-face{
+    font-family: GCash-Bold;
+    src: url("../fonts/flink-cufonfonts/FlinkBold.otf");
+}
+
+@font-face{
+    font-family: GCash-Medium;
+    src: url("../fonts/flink-cufonfonts/FlinkMedium.otf");
+}
+
+@font-face{
+    font-family: GCash-Regular;
+    src: url("../fonts/flink-cufonfonts/FlinkRegular.otf")
+}
+
+/* Header Section */
+.headerSection{
+    margin-top: 130px;
+}
+
+.headerSection h1{
+    font-family: GCash-Medium;
+}
+
+/* Form Section */
+.infoSection1{
+    margin-top: 40px;
+}
+
+.infoSection1 .row div{
+    margin-bottom: 20px;
+}
+
+.infoSection1 form{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.infoSection1 .form-control{
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.infoSection1 label{
+    padding-bottom: 5px;
+    font-family: GCash-Bold;
+    font-size: 23px;
+}
+
+.infoSection1 small{
+    font-family: GCash-Regular;
+}
+
+.btn{
+    border-radius: 100px;
+    padding: 5px 50px;
+    font-family: GCash-Regular;
+}
+
+
+/* MEDIA QUERIES */
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+@media (max-width: 575px){
+    .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, 
+    .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, 
+    .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
+        float: left;
+    } 
+    .col-xs-1{
+        width: 8.33%;
+    }
+    .col-xs-2{
+        width: 16.66%;
+    }
+    .col-xs-3{
+        width: 25%;
+    }
+    .col-xs-4{
+        width: 33%;
+    }
+    .col-xs-5{
+        width: 41.66%;
+    }
+    .col-xs-6{
+        width: 50%;
+    }
+    .col-xs-7{
+        width: 58.33%;
+    }
+    .col-xs-8{
+        width: 66.66%;
+    }
+    .col-xs-9{
+        width: 74.99%;
+    }
+    .col-xs-10{
+        width: 83.33%;
+    }
+    .col-xs-11{
+        width: 91.66%;
+    }
+    .col-xs-12{
+        width: 100%;
+    }
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px){
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px){
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+
+}

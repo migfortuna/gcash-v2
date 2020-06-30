@@ -1,0 +1,233 @@
+@font-face{
+    font-family: GCash-Bold;
+    src: url("../fonts/flink-cufonfonts/FlinkBold.otf");
+}
+
+@font-face{
+    font-family: GCash-Medium;
+    src: url("../fonts/flink-cufonfonts/FlinkMedium.otf");
+}
+
+@font-face{
+    font-family: GCash-Regular;
+    src: url("../fonts/flink-cufonfonts/FlinkRegular.otf")
+}
+
+/* Navigation Bar */
+.navbar .nav-link{
+    font-family: GCash-Bold;
+    color: white;
+    font-size: 21px;
+}
+
+#nav-link-Register span{
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+
+.navbar-collapse{
+    text-align: center;
+}
+
+.dropdown-menu{
+    font-family: GCash-Regular;
+}
+
+.active{
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+.dropdown-menu .active{
+    background-color: white;
+    color: #0275d8;
+    font-weight: bolder;
+}
+
+
+/* Section 1 */
+.section1{
+    margin-bottom: -50px;
+}
+
+.container .jumbotron{
+    text-align: center;
+    background-color: transparent;
+}
+
+#horizontalLine{
+    border: 1px solid #0275d8;
+    width: 100%;
+}
+
+#bankTransfer{
+    font-family: GCash-Bold;
+}
+
+#cashless{
+    font-family: GCash-Medium;
+}
+
+#transferDescription{
+    font-family: GCash-Regular;
+}
+
+
+/* Section 2 */
+.section2{
+    height: 80%;
+}
+
+.section2 .container:nth-child(1) input{
+    border: 1px solid #0275d8;
+}
+
+#partnerBanks{
+    font-family: GCash-Medium;
+}
+
+input.form-control{
+    font-family: GCash-Regular;
+}
+
+.bankName{
+    font-family: GCash-Medium;
+}
+
+#searchDescription{
+    letter-spacing: 1.5px;
+    font-family: GCash-Medium;
+}
+
+
+/* All Banks */
+.allBanks{
+    margin-top: 130px;
+}
+
+
+/* MEDIA QUERIES */
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+@media (max-width: 575px){
+    .section1{
+        margin-bottom: -30px;
+    }
+    .section1 .container{
+        margin-top: 100px;
+    }
+    #bankDescription h5{
+        font-size: 16px;
+    }
+    #bankDescription{
+        margin-top: 15px;
+    }
+    .section2 .container:nth-child(1){
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .dropdown-menu{
+        overflow-y: scroll;
+        height: 325px;
+    }
+    .dropdown-menu .container{
+        font-size: 11px;
+        padding-left: 0px;
+    }
+    .dropdown-divider{
+        transform: translateX(7.5px);
+    }
+    /* 
+    #serviceHeader{
+        margin-bottom: -15px;
+    } */
+
+    .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, 
+    .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, 
+    .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
+        float: left;
+    } 
+    .col-xs-1{
+        width: 8.33%;
+    }
+    .col-xs-2{
+        width: 16.66%;
+    }
+    .col-xs-3{
+        width: 25%;
+    }
+    .col-xs-4{
+        width: 33%;
+    }
+    .col-xs-5{
+        width: 41.66%;
+    }
+    .col-xs-6{
+        width: 50%;
+    }
+    .col-xs-7{
+        width: 58.33%;
+    }
+    .col-xs-8{
+        width: 66.66%;
+    }
+    .col-xs-9{
+        width: 74.99%;
+    }
+    .col-xs-10{
+        width: 83.33%;
+    }
+    .col-xs-11{
+        width: 91.66%;
+    }
+    .col-xs-12{
+        width: 100%;
+    }
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px){
+    .section1 .container{
+        margin-top: 60px;
+    }
+    #bankDescription h5{
+        font-size: 17px;
+    }
+    #bankDescription{
+        margin-top: 15px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .section1 .container{
+        margin-top: 60px;
+    }
+    #bankDescription h5{
+        font-size: 20px;
+    }
+    .dropdown-menu .container{
+        width: 450px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px){
+    .section1 .container{
+        margin-top: 150px;
+    }
+    #bankDescription{
+        margin-top: 25px;
+        text-align: left;
+    }
+    #horizontalLine{
+        visibility: hidden;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+
+}
