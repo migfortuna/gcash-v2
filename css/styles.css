@@ -36,15 +36,17 @@
 
 .active{
     text-decoration: underline;
-    border-radius: 5px;
 }
 
-.dropdown-menu .active{
-    background-color: white;
-    color: #0275d8;
-    font-weight: bolder;
+.dropdown-menu .col-6{
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
+.dropdown-divider{
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 /* Section 1 */
 .section1{
@@ -131,16 +133,13 @@ input.form-control{
     }
     .dropdown-menu{
         overflow-y: scroll;
-        height: 350px;
+        height: 370px;
     }
     .dropdown-menu .container{
         font-size: 12px;
         /* padding-left: 0px; */
     }
-    .dropdown-menu .col-6{
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+  
     /* 
     #serviceHeader{
         margin-bottom: -15px;
