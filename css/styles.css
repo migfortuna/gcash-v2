@@ -131,14 +131,15 @@ input.form-control{
     }
     .dropdown-menu{
         overflow-y: scroll;
-        height: 325px;
+        height: 350px;
     }
     .dropdown-menu .container{
-        font-size: 11px;
-        padding-left: 0px;
+        font-size: 12px;
+        /* padding-left: 0px; */
     }
-    .dropdown-divider{
-        transform: translateX(7.5px);
+    .dropdown-menu .col-6{
+        padding-left: 0px;
+        padding-right: 0px;
     }
     /* 
     #serviceHeader{
